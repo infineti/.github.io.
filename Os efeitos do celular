@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consequências do Uso Excessivo do Celular</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .container {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .quote {
+            font-style: italic;
+            color: #666;
+            margin-top: 0;
+        }
+        .testimonial {
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .resources {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .resources li {
+            margin-bottom: 10px;
+        }
+        .resources li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .resources li a:hover {
+            text-decoration: underline;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .chart-container {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consequências do Uso Excessivo do Celular</h1>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Introdução</h2>
+            <p>O uso de smartphones se tornou ubíquo na sociedade moderna, trazendo inúmeros benefícios, mas também desafios significativos relacionados ao seu uso excessivo.</p>
+            <p>Nesta página, exploraremos os impactos negativos do uso prolongado do celular na saúde física, mental e nas interações sociais, além de oferecer dicas práticas para um uso mais equilibrado.</p>
+        </section>
+
+        <section class="section">
+            <h2>Impactos na Saúde</h2>
+            <p>O uso constante do celular pode levar a problemas como dores de cabeça, insônia, tensão muscular e problemas de visão devido à exposição prolongada à luz azul emitida pelas telas.</p>
+            <div class="chart-container">
+                <canvas id="healthChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Impactos Sociais e Comportamentais</h2>
+            <p>O uso excessivo do celular pode prejudicar as habilidades sociais e de comunicação face a face, resultando em sentimentos de isolamento e falta de conexão emocional com outras pessoas.</p>
+            <div class="chart-container">
+                <canvas id="socialChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Dicas para Reduzir o Uso Excessivo</h2>
+            <ul>
+                <li><strong>Estabeleça Limites:</strong> Defina um horário específico para usar o celular e evite o uso excessivo antes de dormir.</li>
+                <li><strong>Use Aplicativos de Controle:</strong> Utilize aplicativos que ajudem a monitorar e controlar o tempo de tela diário.</li>
+                <li><strong>Pratique Atividades Offline:</strong> Reserve tempo para hobbies e atividades ao ar livre que não envolvam o uso do celular.</li>
+                <li><strong>Conscientização:</strong> Esteja ciente dos momentos em que você utiliza o celular de forma automática e tente reduzir esses hábitos.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Depoimentos e Experiências</h2>
+            <div class="testimonial">
+                <p>"Reduzir meu tempo de tela me permitiu reconectar com amigos e familiares de uma maneira mais significativa. Agora consigo apreciar mais o momento presente sem distrações."</p>
+                <p class="quote">- João, 28 anos</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Recursos Adicionais</h2>
+            <ul class="resources">
+                <li><a href="#">Guia Completo sobre Bem-estar Digital</a></li>
+                <li><a href="#">Aplicativos Recomendados para Controle de Tempo de Tela</a></li>
+                <li><a href="#">Artigos Científicos sobre os Impactos do Uso Excessivo de Smartphones</a></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Perguntas Frequentes (FAQs)</h2>
+            <div class="faq">
+                <h3>Como posso saber se estou usando o celular em excesso?</h3>
+                <p>Existem aplicativos que podem monitorar seu tempo de uso e ajudá-lo a identificar padrões de comportamento. Além disso, estar atento aos sentimentos de ansiedade ou distração pode indicar um uso excessivo.</p>
+                <h3>Quais são os melhores aplicativos para controlar o tempo de tela?</h3>
+                <p>Existem várias opções disponíveis, como Forest, Moment, e QualityTime, que oferecem ferramentas para definir limites e rastrear o tempo gasto em aplicativos.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 SeuNome. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        // Gráfico de Impactos na Saúde
+        var healthChartCtx = document.getElementById('healthChart').getContext('2d');
+        var healthChart = new Chart(healthChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Dores de Cabeça', 'Insônia', 'Tensão Muscular', 'Problemas de Visão'],
+                datasets: [{
+                    label: 'Impactos na Saúde',
+                    data: [3, 4, 2, 5],
+                    backgroundColor: '#007bff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Nível de Impacto'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Impactos Sociais e Comportamentais
+        var socialChartCtx = document.getElementById('socialChart').getContext('2d');
+        var socialChart = new Chart(socialChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Habilidades Sociais', 'Conexão Emocional', 'Qualidade das Interações'],
+                datasets: [{
+                    label: 'Impactos Sociais',
+                    data: [3, 2, 4],
+                    backgroundColor: '#007bff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Nível de Impacto'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
